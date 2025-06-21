@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="eng">
+    <meta name="viewport" content=""width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dice_game.css">
+    <title>Dice Game</title>
+</head>
+
+<body>
+<header class="header">
+    <h1>Welcome to the Dice Game!</h1>
+    <h3>Roll the dice and see who wins!</h3>
+</header>
+<nav class="nav">
+    <ul>
+        <li><img src="./box.svg" alt="logo" style="width: 25px;"> Roll-IT</li>
+        <li><a href="#how-to-play">How to Play</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#about">About Game</a></li>
+    
+    </ul>
+</nav>
+
+<section>
+    <div id="nameModal" class="modal">
+    <div class="modal-content">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="playerName" placeholder="Your name" maxlength="15" autofocus>
+        <button id="startGame">Start Game</button>
+    </div>
+    </div>
+</section>
+
+<section>
+    <div class="result"><h2>Ready to Play?</h2>
+        <div class="result-container">
+            <div class="player1-score" id="player1Score" style="color: black;">Player 1 Score: 0</div>
+            <div class="player2-score" id="player2Score" style="color: black;">Player 2 Score: 0</div>
+        </div>
+        <div class="winner" id="winnerText"></div>
+        <h2 id="resultText"></h2>
+    </div>
+    
+    <div class="players-container">
+        <div class="player" id="player1">Player 1</div>
+        <div class="player" id="player2">Player 2</div>
+    </div>
+    <div class="dice-container">
+        <div class="dice" id="dice1"><img src="./dice1.png" alt="Dice 1"></div>
+        <div class="dice" id="dice2"><img src="./dice1.png" alt="Dice 2"></div>  
+    </div>
+    <button id="rollBtn">Roll Dice</button>
+    <button id="resetBtn">Reset Game</button>
+</section>
+
+
+<section class="game-info-container">
+    <div id="how-to-play" class="info-box">
+        <h2>How to Play</h2>
+        <div class="section-content">
+            <ol>
+                <li>Enter your name when prompted</li>
+                <li>Click "Roll Dice" to play against the computer</li>
+                <li>First to score 5 points wins the game</li>
+                <li>Click "Reset Game" to start over</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="rules" class="info-box">
+        <h2>Game Rules</h2>
+        <div class="section-content">
+            <ul>
+                <li>Higher dice roll wins the round</li>
+                <li>Equal rolls result in a draw</li>
+                <li>Game continues until one player reaches 5 points</li>
+                <li>Player goes first in each round</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <h2>About the Game</h2>
+    <div class="section-content">
+        <p>A simple dice game built with HTML, CSS, and JavaScript.</p>
+        <p>Created as a fun interactive project to demonstrate web development fundamentals.</p>
+    </div>
+</section>
+
+<footer class="footer-section" >
+    <div class="footer">  
+    <p>© 2025 Dice Game.</p>
+    <p>Created by DHANASEKAR</p> 
+    </div>   
+</footer>
+<script src="dice_game.js"></script>
+</body>
+</html>
