@@ -94,8 +94,8 @@ function resetGame() {
   scores = [0, 0];
   gameStarted = false;
   readyMessage.style.display = 'block';
-  dice1.innerHTML = '<img src="./images/dice1.png" alt="Dice 1">';
-  dice2.innerHTML = '<img src="./images/dice1.png" alt="Dice 2">';
+  dice1.innerHTML = '<img src="./dice6.png" alt="Dice 1">';
+  dice2.innerHTML = '<img src="./dice6.png" alt="Dice 2">';
   resultText.textContent = '';
   winnerText.textContent = '';
   updateScores();
