@@ -103,27 +103,3 @@ function resetGame() {
 }
 
 document.addEventListener('DOMContentLoaded', initGame);
-
-const sections = document.querySelectorAll('.content-section');
-const navLinks = document.querySelectorAll('.nav a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    const offset = window.innerHeight / 2;
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.scrollY >= (sectionTop - offset)) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-});
